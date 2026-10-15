@@ -1,0 +1,178 @@
+body{
+    background-color: #100d2b;
+}
+h1{
+    font-size: xx-large;
+    font-weight: 900;
+}
+.mainDiv{
+    color: #F2EBDD;
+    text-align: center;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+p{
+    font-size: xx-large;
+}
+.timer{
+    color: #E56B6F;
+}
+.beginInvestigation{
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 250px;
+    font-style: italic;
+    font-size: large;
+}
+.status{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    flex-direction: row;
+}
+#suspectStatus, #evidenceStatus, #vaultStatus{
+    padding: 5px;
+    border: 2px solid#D4aF62;
+    font-size: larger;
+    margin: 5px;
+}
+#suspectStatus{
+    color: green;
+    flex: 1;
+}
+#evidenceStatus{
+    color:rgb(255, 191, 0);
+    flex: 1;
+}
+#vaultStatus{
+    color: red;
+    flex: 1;
+}
+.beginInvestigation{
+    font-size: x-large;
+    font-weight: 900;
+    border-radius: 8px;
+    background-color: black;
+    transition-duration: 0.5s;
+    cursor:pointer;
+}
+.beginInvestigation:hover{
+    background-color: chartreuse;
+    color: black;
+}
+.investigationLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+.inpField{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+    border: 2px solid #D4aF62;
+    padding: 10px;
+}
+.inLabel{
+    font-weight: 900;
+    font-size: xx-large;
+}
+#vaultPin{
+    font-size: x-large;
+    height: 25px;
+    width: 300px;
+    background-color: #1B1938;
+    color: #F2EBDD;
+    border: 2px solid black;
+}
+#unlockVault{
+    font-size: xx-large;
+    font-weight: 900;
+    background-color: #671F2B;
+    color: white;
+    height: 100px;
+    width: 250px;
+    margin-left: 75px;
+    margin-top: 5px;
+    transition-duration: 0.35s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#unlockVault:hover{
+    background-color: #D4aF62;
+    color: lightyellow;
+}
+.clues{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border: 5px, solid, #D4aF62;
+    text-align: left;
+    font-size: xx-large;
+}
+.clues dt {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #D4AF62;
+}
+.clues dd {
+    margin-top: 5px;
+    margin-left: 0;
+    line-height: 1.4;
+}
+.clueHeading {
+    margin-top: 0;
+}
+.clues dt:not(:first-of-type) {
+    border-top: 1px solid #D4AF62;
+    padding-top: 8px;
+}
+.explanation{
+    display: flex;
+    justify-content:center;
+    margin-top: 11%;
+    margin-bottom: 3%;
+}
+.exp{
+    width: 250px;
+    height: 45px;
+    font-size: large;
+    color: #100d2b;
+    background-color: #D4AF62;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.exp:hover{
+    background-color: #671F2B;
+    color: #F2EBDD;
+}
+@media (max-width: 600px){
+    .investigationLayout{
+        flex-direction: column;
+    }
+    .status{
+        flex-direction: column;
+    }
+    #unlockVault{
+        margin-left: 0px;
+        align-self: center;
+    }
+    #vaultPin{
+        width: 50%;
+    }
+    .clues{
+        font-size: large;
+        align-items: center;
+    }
+    p{
+        font-size: large;
+    }
+}

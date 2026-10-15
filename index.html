@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operation Black Vault</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="mainDiv">
+        <h1><u>Operation Black Vault</u></h1>
+        <h4>Classified // Investigation Division</h4>
+        <h2>Case 007: The Missing Bhusanam</h2>
+        <p>Perumal's Bhushanam were stolen from the temple. They're very costly and belong to Perumal. We <i>have</i> to get them in 5 minutes for an Utsavam. We know the location. But they are kept in a vault which has a code to be accessed. The thief claimed that we had possessed all the clues throughout the investigation. Use them to find the jewels, Sherlock. All the best!</p>
+        <section class="status">
+            <div id="suspectStatus">Suspect: In Custody</div>
+            <div id="evidenceStatus">Evidence: Under Analysis</div>
+            <div id="vaultStatus">Vault: Locked</div>
+        </section>
+        <br>
+        <button class="beginInvestigation">Begin Investigation</button>
+        <h3 class="timer">Time Remaining: 05:00</h3>
+        <div class="investigationLayout">
+        <section class="inpField">
+            <br>
+            <br>
+        <div class="li">
+        <label for="vaultPin" class="inLabel">ENTER VAULT PIN: </label>
+        <input 
+            type ="text"
+            id="vaultPin"
+            inputmode="numeric"
+            autocomplete="off"
+            maxlength="4"
+            placeholder="___________________________________________________________"
+            >
+        </div>
+        <br>
+        <button id="unlockVault">UNLOCK VAULT</button>
+        </section>
+        <section class="clues">
+            <p class="clueHeading">The following questions were given by the thief. Answer them, arrange the answers in the same order and enter it to open the vault!</p>
+            <br>
+            <dl>
+                <dt>E-01 - The Nature of the Supreme</dt>
+                <dd>Count what the record leaves absent. The Supreme is described through boundless virtues, yet the space reserved for the contrary remains untouched.</dd>
+                <dt>E-02 - The Pilgrim's Origin</dt>
+                <dd>Upon an island embraced by a sacred river, He rests with His head towards the forbidden direction. Yet, no injunction binds Him.</dd>
+                <dt>E-03 — The Unspoken Foundation</dt>
+                <dd>A seeker approaches the final refuge, carrying neither the pride of personal effort nor the claim of independent agency. The ancient record describes the conditions accompanying this act of surrender. Examine the doctrine to which the record alludes.</dd>
+                <dt>E-04 — The Marks of the Tradition</dt>
+                <dd>Seek the wisdom preserved by the Acharyas, and the insignia of renunciation. Though they belong to different contexts, both bear a common mark. Discover it.</dd>
+            </dl>
+        </section>
+        </div>
+        </div>
+        <div class="explanation">
+        <button class="exp">Case Archive: The Evidence Explained</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
